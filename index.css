@@ -29,12 +29,12 @@ a{
     font-style: normal;
     text-align: center;
 }
+
 /* a section name */
 .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 412px);
     padding: 50px 15px;
 }
 .title-h1 {
@@ -51,6 +51,40 @@ a{
     letter-spacing: 6px;
     text-align: center;
 
+}
+
+@media screen and (min-width:320px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+@media screen and (max-width:768px) {
+    .title-photo{
+        display: none;
+
+    }
+    .title{
+        min-height: calc(100vh - 412px);
+    }
+}
+@media screen and (min-width:768px) {
+    .title{
+        display: flex;
+        flex-direction: row;
+        padding: 100px 15px 100px 0;
+        align-items: center;
+        height: auto;
+    }
+    .title-photo{
+       width: 350px;
+    }
+}
+@media screen and (min-width:1024px) {
+}
+@media screen and (min-width:1440px) {
 }
 /* .title-h4-span {} */
 
@@ -108,6 +142,9 @@ a{
 @media screen and (min-width:768px) {
     .gallery-img {
         width: 212px;
+    }
+    .mob{
+        display: none;
     }
 }
 @media screen and (min-width:1024px) {
@@ -201,12 +238,16 @@ a{
     width: 28px;
     height: 28px;
 }
-/* #footerOne{
-    width: 250px;
+.one{
+    width: 252px;
+    position: absolute;
 }
-#footerSec{
-    width: 180px;
-} */
+.two{
+    width: 300px;
+    position: absolute;
+    right: 1px;
+    top: 150px;
+}
 .footer-container-mob {
     padding: 0 15px;
     display: flex;
@@ -225,5 +266,39 @@ a{
     font-family: Roboto, sans-serif;
     letter-spacing: 0px;
     color: #333333;
-    margin: 30px 0;
+    margin: 0 0 30px;
+}
+.footer-container-tab{
+    position: relative;
+}
+@media screen and (min-width:320px) {
+}
+@media screen and (max-width:768px) {
+    .footer-container-mob {
+        display: flex;
+        
+    }
+    .footer-container-tab{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) {
+    .footer-container-mob {
+        display: none;
+        
+    }
+    .footer-container-tab{
+        display: inline-block;
+    }
+    .footer-rights {
+        position: absolute;
+        top: 620px;
+        left: -50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+}
+@media screen and (min-width:1024px) {
+}
+@media screen and (min-width:1440px) {
 }
