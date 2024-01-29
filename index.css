@@ -65,14 +65,12 @@ a{
 }
 .title-photo-desc{
     width: calc((125% - 83px)/2);
-    /* position: relative; */
 }
 .oneD{
     width: 200px;
     position: absolute;
     top: 100px;}
 .twoD{
-    /* position: absolute; */
     width: 590px;
 }
 .threeD{
@@ -89,7 +87,7 @@ a{
 
 
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .title-photo{
         display: none;
 
@@ -103,7 +101,7 @@ a{
         display: none;
     }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
     .title{
         display: flex;
         flex-direction: row;
@@ -137,12 +135,10 @@ a{
 }
 @media screen and (min-width:1440px) {
 }
-/* .title-h4-span {} */
 
 /* a section with photo */
 .gallery {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 50px; 
     justify-content: center;
     padding: 50px 15px;
@@ -161,26 +157,21 @@ a{
 .gallery-quote{
     padding: 0 15px;
 }
-/* .gallery-img {
-} */
 .blur-up {
     filter: blur(5px);
     transition: filter 400ms;
-  }
-  
-  .blur-up.lazyloaded {
-    filter: blur(0);
-  }
-
-@media screen and (min-width:320px) {
-   
 }
-@media screen and (max-width:768px) {
+
+.blur-up.lazyloaded {
+  filter: blur(0);
+}
+
+@media screen and (max-width:767px) {
     .gallery-img {
         width: calc((100% - 5px)/1)
     }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
     .gallery-img {
         width: 212px;width: calc((84% - 30px)/3);}
     .mob{
@@ -191,9 +182,6 @@ a{
     .gallery-quote{
         padding: 0 0 150px 0;
     }
-    
-}
-@media screen and (min-width:1440px) {
     
 }
 
@@ -220,7 +208,6 @@ a{
 
 /* footer */
 .contact {
-    /* padding:  0 0 50px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -315,16 +302,13 @@ a{
     flex-direction: column;
     width: 100%;
 }
-.contact-quote{
-
-}
 .footer-info-btn{
     display: flex;
     justify-content: space-between;
 }
 @media screen and (min-width:320px) {
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:7px) {
     .footer-container-mob {
         display: flex;
         
@@ -336,7 +320,7 @@ a{
         display: none;
     }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
     .footer-container-mob,.footer-container-desc {
         display: none;
         
@@ -391,7 +375,4 @@ a{
         padding-top: 20px;
     }
 }
-@media screen and (min-width:1440px) {
-}
-
 
