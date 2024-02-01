@@ -62,18 +62,15 @@
                         loading="lazy"
                     />
                 </div>
-                <!-- <img
-                    data-src="./photo/IMG_4654.jpg"
-                    alt="Image descriptions for all versions"
-                    class="gallery-img blur-up lazyload"
-                    src="./photo/IMG_4654.jpg"
-                    loading="lazy"
-                /> -->
             </div>
             <div class="title-container fade-in-right">
-                <h1 class="title-h1">Viktoriia Bezhenar</h1>
-                <h4 class="title-h4 head"><span class="title-h4-span">photographer</span><br>Anthony | Anttohaa</h4>
-            </div>
+                <button class="primary" onclick="window.dialogVika.showModal();">
+                    <h1 class="title-h1">Viktoriia Bezhenar</h1>
+                </button>
+                <button class="primary" onclick="window.dialogAnton.showModal();">
+                    <h4 class="title-h4 head"><span class="title-h4-span">photographer</span><br>Anthony | Anttohaa</h4>
+                </button>
+             </div>
         </section>
 
         <h5 class="gallery-quote quote tracking-in-expand-fwd"> "How quickly the female imagination has! It jumps from simple approval to love and from love to marriage in a minute."</h5>
@@ -212,30 +209,6 @@
                     src="./photo/IMG_4652.jpg"
                     loading="lazy"
                 />
-            
-                <!-- 8 -->
-
-                <!-- <img
-                    data-src="./photo/IMG_4695.jpg"
-                    alt="Image descriptions for all versions"
-                    class="gallery-img blur-up lazyload"
-                    src="./photo/IMG_4695.jpg"
-                    loading="lazy"
-                />
-                <img
-                    data-src="./photo/IMG_4661.jpg"
-                    alt="Image descriptions for all versions"
-                    class="gallery-img blur-up lazyload"
-                    src="./photo/IMG_4661.jpg"
-                    loading="lazy"
-                />
-                <img
-                    data-src="./photo/IMG_4680.jpg"
-                    alt="Image descriptions for all versions"
-                    class="gallery-img blur-up lazyload"
-                    src="./photo/IMG_4680.jpg"
-                    loading="lazy"
-                /> -->
             </div>
         </section>
 
@@ -244,23 +217,23 @@
             <h5 class="gallery-quote quote">Tell me your story, what sets your soul on fire, the love that fuels your passions.<br> I'm eager to reconnect and dive into our joint project with genuine excitement.</h5>
             <a href="tel:+49 000 0000000" class="contact-phone">+49 000 0000000</a>
             <address class="contact-address">Dortmund, Germany</address>
-            <!-- <a href="mailto:anttohaa.a@gmail.com" class="contact-email">anttohaa.a@gmail.com</a> -->
             <div class="footer-container">
-                <!-- <a href="https://www.facebook.com/anttohaa.a" target="_blank" class="footer-container-link"> -->
+                <button class="primary" onclick="window.dialogFacebook.showModal();">
                     <svg width="18" height="18" class="footer-container-link-svg">
                         <use href="./photo/icons-social-footer.svg#icons-facebook"></use>
                     </svg>
-                <!-- </a> -->
-                <!-- <a href="https://www.instagram.com/anttohaa/" target="_blank" class="footer-container-link"> -->
+                </button>
+
+                <button class="primary" onclick="window.dialogInstagram.showModal();">
                     <svg width="18" height="18" class="footer-container-link-svg">
                         <use href="./photo/icons-social-footer.svg#icons-instagram"></use>
-                    </svg>
-                <!-- </a> -->
-                <!-- <a href="" class="footer-container-link"> -->
+                    </svg></button>
+
+                <button class="primary" onclick="window.dialogGmail.showModal();">
                     <svg width="18" height="18" class="footer-container-link-svg">
                         <use href="./photo/icons-social-footer.svg#icons-gmail"></use>
                     </svg>
-                <!-- </a> -->
+                </button>
             </div>
              <div class="footer-container-mob">
                 <img
@@ -282,13 +255,7 @@
                 <p class="footer-rights">All rights reserved.</p>
             </div>
 
-            <!-- <img
-                    data-src="./photo/IMG_4654.jpg"
-                    alt="Image descriptions for all versions"
-                    class="gallery-img blur-up lazyload"
-                    src="./photo/IMG_4654.jpg"
-                    loading="lazy"
-                /> -->
+            
             <div class="footer-container-tab">
 
                 <img
@@ -319,7 +286,6 @@
                     <h5 class="quote contact-quote">Tell me your story, what sets your soul on fire, the love that fuels your passions.<br> I'm eager to reconnect and dive into our joint project with genuine excitement.</h5>
                     <a href="tel:+49 000 0000000" class="contact-phone">+49 000 0000000</a>
                     <address class="contact-address">Dortmund, Germany</address>
-                    <!-- <a href="mailto:anttohaa.a@gmail.com" class="contact-email">anttohaa.a@gmail.com</a> -->
                 </div>
                 <div class="footer-info-btn">
                     <div>
@@ -332,21 +298,20 @@
                     />
                     </div>
                     <div class="footer-container">
-                        <!-- <a href="https://www.facebook.com/anttohaa.a" target="_blank" class="footer-container-link"> -->
+                        <button class="primary" onclick="window.dialogFacebook.showModal();">
                             <svg width="18" height="18" class="footer-container-link-svg">
                                 <use href="./photo/icons-social-footer.svg#icons-facebook"></use>
                             </svg>
-                        <!-- </a> -->
-                        <!-- <a href="https://www.instagram.com/anttohaa/" target="_blank" class="footer-container-link"> -->
+                        </button>
+                        <button class="primary" onclick="window.dialogInstagram.showModal();">
                             <svg width="18" height="18" class="footer-container-link-svg">
                                 <use href="./photo/icons-social-footer.svg#icons-instagram"></use>
-                            </svg>
-                        <!-- </a> -->
-                        <!-- <a href="" class="footer-container-link"> -->
+                            </svg></button>
+                        <button class="primary" onclick="window.dialogGmail.showModal();">
                             <svg width="18" height="18" class="footer-container-link-svg">
                                 <use href="./photo/icons-social-footer.svg#icons-gmail"></use>
                             </svg>
-                        <!-- </a> -->
+                        </button>
                     </div>
                     <div>
                         <img
@@ -364,6 +329,125 @@
             </div>
         </footer>
     </div>
+
+    <dialog id="dialogVika">
+        <h2 class="dialog-title title tracking-in-expand-fwd">Viktoriia Bezhenar<br><span class="dialog-title-span">model</span></h2>
+        <div class="dialog-container">
+            <a href="https://www.facebook.com/profile.php?id=100076845159180" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-facebook"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Facebook</h5>
+            </a>
+            <a href="https://www.instagram.com/_.tvoya__karma._/?hl=en" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-instagram"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Instagram</h5>
+            </a>
+            <a href="mailto:abejenar99@gmail.com" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-gmail"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Gmail</h5>
+            </a>
+        </div>
+        <button onclick="window.dialogVika.close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <dialog id="dialogAnton">
+        <h2 class="dialog-title title tracking-in-expand-fwd">Anthony | Anttohaa<br><span class="dialog-title-span">photographer</span></h2>
+        <div class="dialog-container">
+            <a href="https://www.facebook.com/anttohaa.a" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-facebook"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Facebook</h5>
+            </a>
+            <a href="https://www.instagram.com/anttohaa/" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-instagram"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Instagram</h5>
+            </a>
+            <a href="mailto:anttohaa.a@gmail.com" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-gmail"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Gmail</h5>
+            </a>
+        </div>
+        <button onclick="window.dialogAnton.close();" aria-label="close" class="x">❌</button>
+    </dialog>
+
+    <!-- Facebook -->
+    <dialog id="dialogFacebook">
+        <div class="dialog-container">
+            <h2 class="dialog-title title tracking-in-expand-fwd">Viktoriia Bezhenar<br><span class="dialog-title-span">model</span></h2>
+            <a href="https://www.facebook.com/profile.php?id=100076845159180" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-facebook"></use>
+                </svg>
+            </a>
+            <h5 class="quote dialog-quote">Facebook</h5>
+            
+        </div>
+        <div class="dialog-container">
+            <h2 class="dialog-title title tracking-in-expand-fwd">Anthony | Anttohaa<br><span class="dialog-title-span">photographer</span></h2>
+            <a href="https://www.facebook.com/anttohaa.a" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-facebook"></use>
+                </svg>
+            </a>
+            <h5 class="quote dialog-quote">Facebook</h5>
+        </div>
+        <button onclick="window.dialogFacebook.close();" aria-label="close" class="x">❌</button>
+    </dialog>
+
+    <!-- Instagram -->
+    <dialog id="dialogInstagram">
+        <div class="dialog-container">
+            <h2 class="dialog-title title tracking-in-expand-fwd">Viktoriia Bezhenar<br><span class="dialog-title-span">model</span></h2>
+            <a href="https://www.instagram.com/_.tvoya__karma._/?hl=en" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-instagram"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Instagram</h5>
+            </a>
+        </div>
+        <div class="dialog-container">
+            <h2 class="dialog-title title tracking-in-expand-fwd">Anthony | Anttohaa<br><span class="dialog-title-span">photographer</span></h2>
+            <a href="https://www.instagram.com/anttohaa/" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-instagram"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Instagram</h5>
+            </a>
+        </div>
+        <button onclick="window.dialogInstagram.close();" aria-label="close" class="x">❌</button>
+    </dialog>
+
+    <!-- Gmail -->
+    <dialog id="dialogGmail">
+        <div class="dialog-container">
+            <h2 class="dialog-title title tracking-in-expand-fwd">Viktoriia Bezhenar<br><span class="dialog-title-span">model</span></h2>
+            <a href="mailto:abejenar99@gmail.com" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-gmail"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Gmail</h5>
+            </a>
+        </div>
+        <div class="dialog-container">
+            <h2 class="dialog-title title tracking-in-expand-fwd">Anthony | Anttohaa<br><span class="dialog-title-span">photographer</span></h2>
+            <a href="mailto:anttohaa.a@gmail.com" target="_blank" class="dialog-container-logo-svg">
+                <svg width="18" height="18" class="footer-container-link-svg">
+                    <use href="./photo/icons-social-footer.svg#icons-gmail"></use>
+                </svg>
+                <h5 class="quote dialog-quote">Gmail</h5>
+            </a>
+        </div>
+        <button onclick="window.dialogGmail.close();" aria-label="close" class="x">❌</button>
+    </dialog>
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
     integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="

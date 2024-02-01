@@ -102,7 +102,11 @@ a {
     -webkit-animation: fade-in-right .6s linear both;
     animation: fade-in-right .6s linear both
 }
-
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .title {
     display: flex;
     flex-direction: column;
@@ -619,5 +623,80 @@ img:hover,
 
     .contact-address {
         padding-top: 20px;
+    }
+}
+/* modal */
+.primary{
+    border: transparent;
+    background-color: transparent;
+}
+dialog {
+	padding: 1rem 3rem;
+	background: white;
+	max-width: -webkit-fill-available;
+    height: fit-content;
+	padding-top: 2rem;
+	border-radius: 20px;
+	border: 0;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgb(255 255 255 / 40%);
+		z-index: 2;
+		backdrop-filter: blur(20px);
+	}
+}
+.x {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    transform-origin: center;
+    &:hover {
+        filter: grayscale(3);
+        transform: scale(1.1);
+    }
+}
+.dialog-title{
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+	font-size: 2rem;
+	padding-bottom: 1rem;
+    min-height: auto;
+    font-family: "Muli", Sans-serif;
+    color: var(--title);
+    display: block;
+}
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.dialog-container-logo-svg {
+    display: flex;
+    align-items: center;
+}
+.footer-container-link-svg:is(:hover, :focus)> h5.quote,
+.dialog-container-logo-svg:is(:hover, :focus){
+    fill: var(--softBlue);
+    color: var(--softBlue);
+    stroke: var(--softBlue);
+}
+.footer-container-link-svg {
+    margin-right: 5px;
+}
+.dialog-title-span{
+    font-size: 20px;
+}
+@media screen and (min-width:1000px) {
+    .dialog-quote{
+        padding: 0;
     }
 }
